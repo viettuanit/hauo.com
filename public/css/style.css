@@ -1,0 +1,553 @@
+
+*{
+	margin: 0;
+	padding: 0;
+}*
+body{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color:#CCC;
+}
+.clr{
+	clear: both;
+}
+a{
+	cursor: pointer;
+	text-decoration: none;
+}
+li{
+	list-style: none;
+}
+.container{
+	float: left;
+	background: #fff;
+	width: 100%;
+	float: left;
+}
+.container .header{
+	float: left;
+	border-bottom: 1px solid #d5d5d5;
+	width: 100%;
+	background: #f2f2f2;
+}
+.container .header .logo img{
+	float: left;
+	width: 11%;
+	margin:9px;
+}
+.container .header .menu-top{
+	float: left;
+	width: 75%;
+	text-align: center;
+}
+.menu-top ul li{
+  float: left;
+}
+.menu-top ul li a{
+  color: #fff;
+  padding: 20px;
+  float: left;
+  border-radius: 5px;
+  background: #262665;
+}
+.container .header .menu-top ul{
+	text-align: center;
+	margin: 10px 0px 0 30px;
+	float: left;
+
+}
+.container .header .menu-top ul li{
+	float: left;
+  border-radius: 5px;
+	text-align: center;
+	margin-right:8px;
+	color: #fff;
+	font-size: 18px;
+}
+.menu-top ul li a:hover{
+	background: #00ADFF;
+}
+.container .content{
+	float:left;
+	color: #000;
+	width: 100%;
+	height: 200px;
+}
+.container .header .logout{
+	float: right;
+	width: 100px;
+	padding: 10px;
+	border:1px solid #fff;
+	margin:20px;
+	font-size: 18px;
+}
+.div-form-se{
+	float: left;
+	width: 75%;
+	margin:0 0 0 15%;
+}
+.div-form-se .form-se{
+	float: left;
+	width: 100%;
+}
+.form-se .nguon,.form-se .gioitinh{
+	float: left;
+	margin-top: 30px;
+}
+.form-se .gioitinh div,.form-se .nguon span{
+	float: left;
+	padding: 10px;
+	background: #F84E3A;
+	border-radius:10px;
+	margin: 10px 20px 0 0;
+	color: #fff;
+	font-size: 18px;
+}
+.form-se .nguon .title,.form-se .gioitinh label{
+	font-size: 20px;
+	float: left;
+	width: 100%;
+}
+.form-se .nguon span{
+	float: left;
+	width: 200px;
+}
+.form-se .nguon span input{
+	float: left;
+	margin: 5px;
+}
+.form-se .nguon span label{
+	float: left;
+}
+.form-se .hoanthanh{
+	margin: 20px 100px;
+	float: left;
+}
+.form-se .hoanthanh input{
+	float: left;
+	padding: 10px;
+	border:none;
+	color: #fff;
+	font-size: 18px;
+	background: #5707FF;
+}
+.form-phucvu{
+	float: left;
+	width: 90%;
+	margin: 2% 10%;
+}
+.table-restaurant{
+	float: left;
+}
+.table-restaurant ul li{
+    float: left;
+    padding: 31px;
+    text-align: center;
+    width: 90px;
+    border-radius: 30px;
+    background-color: #d5d5d5;
+    margin: 15px;
+    font-size: 40px;
+    transition: background-color 1s ease;
+}
+.table-restaurant ul li:hover{
+	background-color: #07AEFF;
+}
+.table-restaurant ul li a{
+	padding: 27px;
+}
+.show-menu{
+	float: left;
+	display: none;
+  width: 67%;
+}
+.show-menu .menu-order{
+	float: left;
+  width: 100%;
+}
+table,th, td {
+    border: 1px solid #d5d5d5;
+    border-collapse: collapse;
+}
+table{
+  float: left;
+}
+th{
+  background: #1F1F8B;
+  color: #fff;
+  font-size: 25px;
+  padding: 5px;
+}
+td {
+    padding: 5px;
+    text-align: center;
+    font-size: 19px;
+}
+caption{
+	font-size: 40px;
+	color: #262665;
+  background: #f2f2f2;
+  border-radius: 5px;
+}
+.table-menu{
+  float: left;
+  width: 100%;
+}
+.table-menu tr td .monan{
+	height: 150px;
+}
+.option-input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  position: relative;
+  top: 1px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 40px;
+  width: 40px;
+  transition: all 0.15s ease-out 0s;
+  background: #cbd1d8;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  margin-right: 0.5rem;
+  outline: none;
+  position: relative;
+  z-index: 1000;
+}
+.option-input:hover {
+  background: #9faab7;
+}
+.option-input:checked {
+  background: #40e0d0;
+}
+.option-input:checked::before {
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  content: '✔';
+  display: inline-block;
+  font-size: 26.66667px;
+  text-align: center;
+  line-height: 40px;
+}
+.option-input:checked::after {
+  -webkit-animation: click-wave 0.65s;
+  -moz-animation: click-wave 0.65s;
+  animation: click-wave 0.65s;
+  background: #40e0d0;
+  content: '';
+  display: block;
+  position: relative;
+  z-index: 100;
+}
+.button {
+  margin: 0 0 0 5px;
+  text-indent: -9999px;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  float: left;
+  text-align: center;
+  float: left;
+}
+.button img{
+  float: left;
+  height: 40px;
+}
+.numbers-row input{
+  width: 40px;
+  font-size: 28px;
+  margin-left: 10px;
+}
+.button-main{
+  float: left;
+  margin: 10px 0 10px 40%;
+  padding: 10px;
+  background: #07AFFF;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 5px;
+  border:none;
+}
+.tai-chinh{
+  float: left;
+  display: none;
+}
+.title-name-table{
+  font-size: 30px;
+  float: left;
+}
+.button-them{
+  padding: 10px;
+  float: right;
+  margin-right: 20%;
+  background: #262665;
+  color: #fff;
+}
+.show-menu-2{
+  display: none;
+  width: 68%;
+  float: left;
+}
+.form-ma{
+  float: left;
+  width: 90%;
+  margin:20px 0 0 5%;
+
+}
+.list-play{
+  float: left;
+  background: #f2f2f2;
+  width: 100%;
+}
+.table-tien,.table-tien table{
+  float: left;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.table-tien.thang{
+  background: #f2f2f2;
+}
+.table-tien.nam{
+  background: #F2ECF2;
+}
+.order-ma{
+  float: left;
+  display: none;
+}
+.form-dangnhap{
+  float: left;
+  width: 80%;
+  margin: 20px 0 0 20%;
+}
+.form-dangnhap .form-group{
+  float: left;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.form-dangnhap .form-group label{
+  float: left;
+  width: 20%;
+  font-size: 17px;
+}
+.form-dangnhap .form-group .col-md-6 .form-control{
+  float: left;
+  padding: 5px;
+  border-radius: 5px;
+  width: 200px;
+}
+.active{
+  background: #19CBCB !important;
+  float: left;
+  border-radius: 5px;
+}
+.table-monan table{
+  width: 100%;
+}
+.add-mon-id{
+  float: right;
+  background: #262665;
+  margin: 0px 30px 0 0;
+  border-radius: 5px;
+  text-align: center;
+  border:none;
+}
+.add-mon-id{
+  font-size: 25px;
+  color: #fff;
+  border: 1px groove #000;
+  height: 350px;
+  width: 30%;
+}
+.container-add-mon-id{
+  display: none;
+}
+.label-idmon{
+  padding: 30px 50px;
+  float: left;
+}
+.add-mon-id form .group-add-id{
+  border:2px groove #0E0E3E;
+  padding: 20px 5px;
+}
+
+.group-add-id label{
+  float: left;
+}
+.nhap-text{
+  width: 80px;
+  padding: 5px;
+}
+#add-mon{
+  float: left;
+  width: 100%;
+  display: none;
+}
+h1{
+  font-size: 40px;
+  color: #262665;
+  margin-bottom: 20px;
+  text-align: center;
+}
+#add-mon form{
+  text-align: center;
+  float: left;
+}
+#add-mon form .group-input{
+  float: left;
+  width: 100%;
+  margin: 10px;
+}
+#add-mon form .group-input label,.label-nguyenlieu{
+  font-size: 25px;
+  float: left;
+  width: 200px;
+  color: #262665;
+}
+#add-mon form .group-input input{
+  float: left;
+  width: 40%;
+  padding: 5px;
+  border-radius: 5px;
+}
+.nguyenlieu{
+  float: left;
+  width: 100%;
+}
+.nguyenlieu ul li{
+  float: left;
+  width: 49%;
+  margin-bottom: 5px;
+  border-right: 1px solid #d5d5d5;
+
+}
+.nguyenlieu ul{
+  float: left;
+  width: 100%;
+  border:1px solid #d5d5d5;
+  border-radius: 10px;
+  padding: 20px 0px;
+}
+.nguyenlieu ul li input{
+  float: left;
+  width: 20%;
+  padding: 5px;
+}
+#add-mon form .nguyenlieu ul label{
+  font-size: 17px;
+  float: left;
+  width: 70%;
+  color: #262665;
+}
+.list-con{
+  float: left;
+  width: 100%;
+}
+.nguyenlieu-table{
+  width: 100%;
+}
+.button-material{
+  float: left;
+  width: 100%;
+}
+.button-material span{
+  float: left;
+}
+.button-material span a{
+  float: left;
+  padding: 10px;
+  border-radius: 4px;
+  background-color: #19CBCB;
+  color: #fff;
+  font-size: 18px;
+  margin-right: 10px;
+  margin-bottom: 5px;
+}
+.wap-addmaterial{
+  width: 40%;
+  float: left;
+}
+.form-create{
+  float: left;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius:10px;
+  border-top-right-radius: 10px;
+  border: 1px solid #d5d5d5;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.form-create .group-input{
+  float: left;
+  width: 100%;
+  margin: 10px;
+}
+.form-create .group-input label{
+  float: left;
+  width: 30%;
+  font-size: 17px;
+}
+.form-create .group-input input{
+  float:left;
+  padding: 5px;
+  width: 60%;
+  border-radius: 5px;
+}
+.table-material{
+  overflow: auto;
+  height: 500px;
+}
+.alert-success{
+  float:left;
+  color: red;
+  margin:10px;
+  font-size: 19px;
+  width: 100%;
+}
+.list-material{
+  float: right;
+  width: 59%;
+  height: 590px;
+  overflow: auto;
+  border-radius: 10px;
+  border: 1px solid #d5d5d5;
+}
+.list-material table{
+  width: 100%;
+}
+.container-button{
+  float: left;
+  width: 100%;
+}
+.content-list-nguyenlieu{
+  float: left;
+  height: 700px;
+  overflow: auto;
+  width: 100%;
+}
+.container-button .kichhoat{
+  background: #f2f2f2;
+  color: #000;
+  padding: 10px;
+}
+.container-button a{
+  float: left;
+  padding: 10px;
+  font-size: 17px;
+  background:#000;
+  color: #fff;
+  border-top-left-radius: 10px;
+}
+.them-id-material{
+  margin-bottom: 20px;
+}
+.session-material{
+  color: red;
+  font-size: 20px;
+  padding: 10px;
+}
